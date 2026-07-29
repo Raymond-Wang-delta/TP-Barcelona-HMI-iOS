@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>iOS TP Barcelona HMI APP Download Link</title>
+  <style>
+    :root {
+      /* 台達經典配色規範 */
+      --delta-blue-dark: #003366;  /* 深藍底色 */
+      --delta-blue-accent: #00509d;/* 漸變輔助藍 */
+      --delta-green: #00A650;      /* 台達品牌綠 */
+      --delta-green-hover: #008842;/* 按鈕 Hover 綠 */
+      --card-bg: rgba(255, 255, 255, 0.08); /* 半透明卡片容器 */
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      /* 質感漸層深藍背景 */
+      background: linear-gradient(135deg, var(--delta-blue-dark) 0%, var(--delta-blue-accent) 100%);
+      color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      text-align: center;
+      box-sizing: border-box;
+      padding: 20px;
+    }
+
+    /* 玻璃擬態卡片容器 */
+    .container {
+      background: var(--card-bg);
+      backdrop-filter: blur(10px);
+      padding: 2.5rem 2rem;
+      border-radius: 16px;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+      max-width: 440px;
+      width: 100%;
+    }
+
+    /* 上方品牌綠色圖示 */
+    .app-icon {
+      width: 56px;
+      height: 56px;
+      margin-bottom: 1rem;
+      fill: var(--delta-green);
+      filter: drop-shadow(0 2px 8px rgba(0, 166, 80, 0.4));
+    }
+
+    h2 {
+      font-weight: 700;
+      font-size: 1.8rem;
+      margin-top: 0;
+      margin-bottom: 1.8rem;
+      letter-spacing: 0.5px;
+    }
+
+    /* 綠色安裝按鈕風格 */
+    a.install-link {
+      background-color: var(--delta-green);
+      color: white;
+      text-decoration: none;
+      padding: 1rem 1.5rem;
+      font-size: 1.05rem;
+      font-weight: 600;
+      border-radius: 30px;
+      box-shadow: 0 4px 15px rgba(0, 166, 80, 0.4);
+      transition: all 0.25s ease;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    a.install-link:hover {
+      background-color: var(--delta-green-hover);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(0, 166, 80, 0.6);
+    }
+
+    .release-notes {
+      margin-top: 2rem;
+      padding-top: 1.2rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.15);
+      font-size: 0.85rem;
+      color: rgba(255, 255, 255, 0.8);
+      line-height: 1.6;
+      text-align: left;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- 下載圖示 -->
+    <svg class="app-icon" viewBox="0 0 24 24">
+      <path d="M5,20H19V18H5M19,9H15V3H9V9H5L12,16L19,9Z" />
+    </svg>
+
+    <h2>iOS TP Barcelona HMI APP</h2>
+
+    <a
+      href="itms-services://?action=download-manifest&url=https://raymond-wang-delta.github.io/OBC_BT_Control/manifest.plist"
+      class="install-link"
+    >
+      <span>📥 Click to download APP</span>
+    </a>
+
+    <div class="release-notes">
+      <strong>V 0.0 (2026-08-14)</strong><br />
+      <span>Description: Initial iOS TP Barcelona HMI APP</span>
+    </div>
+  </div>
+
+</body>
+</html>
